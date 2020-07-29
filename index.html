@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <section class="calculator">
+        <form action="" class="myCalculator">
+            <div class="header">
+                <h2>Simple Calculator</h2>
+                <input type="text" id="display" class="display" placeholder="0" readonly>
+            </div>
+            <div class="calcBody">
+                <input type="button" id="singleDelete" value="⌫" onclick="backspace(' ⌫')">
+                <input type="button" id="operator" style="color: #000;" value="AC" onclick="clean()">
+                <input type="button" id="operator" style="color: #000;" value="&radic;" onclick="RadicOperand()">
+                <input type="button" id="operator" value="&divide;" onclick="operand('/')">
+                
+                
+
+                <input type = "button" value="7" onclick="displayNum(7)">
+                <input type = "button" value="8" onclick="displayNum(8)">
+                <input type = "button" value="9" onclick="displayNum(9)">
+                <input type="button" id="operator" value="&times;" onclick="operand('*')">
+
+                <input type = "button" value="4" onclick="displayNum(4)">
+                <input type = "button" value="5" onclick="displayNum(5)">
+                <input type = "button" value="6" onclick="displayNum(6)">
+                <input type = "button" id="operator" value="-"  onclick ="operand('-')">
+
+                <input type = "button" value="1" onclick="displayNum(1)">
+                <input type = "button" value="2" onclick="displayNum(2)">
+                <input type = "button" value="3" onclick="displayNum(3)">
+                <input type = "button" id="operator" value="+"  onclick="operand('+')">
+                
+                <input type = "button" value="0" onclick="displayNum(0)">
+                <input type = "button"  value="." onclick="displayNum('.')">
+                <input type = "button" id="calcAns" value="=" onclick="equal()">
+            
+            </div>
+        </form>
+    </section>
+    <script src="calculator.js"></script>
+</body>
+</html>
